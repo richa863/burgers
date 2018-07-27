@@ -1,0 +1,45 @@
+<div id ="header">
+  <h1 class="title">Welcome to 
+      <br>
+      Burger Brian's</h2>
+</div>
+
+
+<div id="main">
+
+
+  <div>
+    <div>
+      {{#each burger}}
+        {{#unless devoured}}
+          {{> burgers/burgerlist devoured=1}}
+        {{/unless}}
+      {{/each}}
+    </div>
+  </div>
+
+
+  <div class=>
+    <div>
+      <input id="burgerName" type="text" placeholder="Name of Your Burger" data-eaten="0">
+      <button id="addBurger" type="button">Add A Burger</button>
+    </div>
+  </div>
+
+
+  <div class=>
+    <div class=>
+      {{#each burger}}
+        {{#if devoured}}
+          {{> burgers/burgerlist devoured=0}}
+        {{/if}}
+      {{/each}}
+    </div>
+  </div>
+
+</div>
+
+
+<div id =>
+  <p>Thanks for eating at Burger Brian's</p>
+</div>
